@@ -1,0 +1,24 @@
+<div align="center">
+<img alt="Zombies" src="https://lh3.googleusercontent.com/fife/AKsag4MtN5PE25MpupPa8Kils7FWuxh-EcezPOeRrpsg91R8F2dVa9swrqgcc9N5sOwCZskkOWY78MN5FoYTVNl-g8F8J9RKWnL2cJJiZslmb3TTrvsFkVWbzUgS-K4cFTLgpCZgIzjLYsz9PdxufSdTbr8sicsVjBh2KPjyaCEDfGJrNZ6u79_pPp0sKqvpkJudU-7sVmnN-nZwtZGKLGi2PHhbxLxglN0PATik1qBBR0nZVDlyq775G1LLh-h9TKH25BY3fgkJPUuc3kEsMrSuJEQEio37aCkWJDYvGSUCN_TedEplTmtP9XyvW_vmuHcV49zK_jf8FXfCunckPJJjw4XgWO_sxloFOWgL81iw_T8NVOD5mN15StH5Zed8lHWMgrYpL18ISDdD06bgyRBQwlyvpQDpspc_nv64UZVghUZeyNXA8C2OAVaAYwfu2SHjswzdzI9SWRQ_8EJs8Upd4jlIYftyHFmDu6-BoDaAbKoZz_9aMu6vNytd8ZINsRa6j7eLZdpphlGjCSLausZYwOWFeMNVMvFSBNpLlxFAl2ih6IfmtSzK4MKbvveLRovHwaWQhKKDpiNuxAsfwz0r0wkkcIav0J7MF5o3QN8fIQ9a8DIil6uP82MG4sbiwVvY7yctfcYIh9-966-bngNABMkD6pZgvb99NkK34Xdq1oKhfec_zXEkyiUEnjaw1jXSKR-XyqnnpwQ3uujvd07seYNbAHBz94UBuV0GpKgZeJT9HVI9eken5TD3oLccOAM8RDcs5-cowDUjQ8J-X_SY_kgc-ss33LXvV7f709BI4Dwqyi-mWRqaxVXbckEghfHRMD_N0wJ9BI8Im5ABhx9ZJWBRYiIWMV9lMtiZU1NV51XiOerRUdhfaQJHIT8n7JnYr35sEnpPciUO-GBPsHyXZLNFlg8UVGDZRfMHv-MDlLVrt53PkE9JQufTFi8aqHtV-oRGibElHr97VdU3eSHN6Exd7t5CLNPRzGScKTQum9G1eN2rXU5v9yfEdO30_SJCKBCXsAiHyut1Z1z0JaFSRqQGim-UK9WoiLivvspbhmQXEHFJnh7Z-c9HTWrOS10PzEN8BYYJ5zASH5p3Yw44Zx7YzN-xqr_fkXulLYZiukSMb_JgGSUazzmUAFWLz_qBGSS8un7eUw_I3uLusuof3fin-7T9tI3Dh5p-yuxw5is2VfQL4ZXNlEYJ_rzrV4uSyp0ETIMvAWs3CCumhO2tG2L9uAHX1XI_AGBE6HLpsVGSXc_LcyTbji6zKJ0WFC6p7GAAla77LVAzg7Uw6cUhUgJQAO90hOVEtlTC7OJyvGou6pcX2QKgtTXCUwBkOVBAxre5fXM12iMyzRi1vwserCIqBn8HD0kLnxAplarX5h4rIeOG1Jey6qXEVRsB-eOgMzbdRnZJnDhUyvQuukLfJGxjfG2mugKLWNFcOjsGaZUYlp1TyotLvRbimdQYkykRE3Ztpx6mn3Om_0iowHfY4Dlh65P7umMFn5zU-Q1UPevUIh_fH3X7Px56S7yPy5Rw2wu2MA=w2560-h1315">
+<h1> 🧟‍♂️ Weapon Mods </h1>
+</div>
+
+## 🔫 Change Starting Weapon
+  
+  Navagate to: <b>`usermaps/scrips/zm/usermap.gsc`</b> and underneath of <b>`zm_usermap::main();`</b> add the following line:
+
+  ```bash
+  level.start_weapon = GetWeapon("ray_gun");
+  ```
+
+## 🔫 Change Laststand Weapon
+
+  Navagate to: <b>`usermaps/scrips/zm/usermap.gsc`</b> and underneath of <b>`zm_usermap::main();`</b> add the following lines:
+
+  ```bash
+level.default_laststandpistol             = getWeapon( "YOURCO-OPDEFAULTLASTSTANDWEAPON" ); // The one you get if you go down in co-op and didnt have another pistol
+level.default_solo_laststandpistol        = getWeapon( "YOURSOLOLASTSTANDWEAPON" ); // The one you get with quickrevive in solo
+level.laststandpistol                     = level.default_laststandpistol;
+level.start_weapon                        = level.default_laststandpistol;
+level thread zm::last_stand_pistol_rank_init();
+  ```
