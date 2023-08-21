@@ -3,7 +3,7 @@
 <h1> 🧟‍♂️ HUD Mods </h1>
 </div>
 
-## 🔫 Typewriter Text Intro
+## ⌨️ Typewriter Text Intro
   
   Navagate to: <b>`usermaps/scrips/zm/usermap.gsc`</b> and add the following line to <b>`main();`</b>:
   
