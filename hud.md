@@ -50,3 +50,19 @@
 }
 
   ```
+
+## 🗛 Change Fonts
+  
+  Open your <b>.zone</b> file and add the following:
+  
+  ```bash
+ttf,fonts/default.ttf //For zm hud as well
+ttf,fonts/escom.ttf //Hud Text (Hint string, weapon hud text)
+ttf,fonts/FoundryGridnik-Medium.ttf //Menu hud text (and some more)
+ttf,fonts/FoundryGridnik-Bold.ttf //Menu hud text (THE CAPITAL BIG LETTERS and some more)
+ttf,fonts/RefrigeratorDeluxe-Regular.ttf //Player names and the rest of the text
+ttf,fonts/wearetrippinshort.ttf //For zm hud
+  ```
+Next add a new folder in <b>usermaps</b> called <b>fonts</b>.
+
+Add any <b>TrueType</b> Font to this folder to be used in-game.
